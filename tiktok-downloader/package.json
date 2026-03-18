@@ -1,0 +1,22 @@
+{
+  "name": "tiktok-downloader",
+  "version": "1.0.0",
+  "description": "TikTok 视频下载工具 - 使用 Playwright 自动化",
+  "main": "scripts/download.js",
+  "scripts": {
+    "download": "node scripts/download.js",
+    "setup": "bash scripts/setup.sh"
+  },
+  "keywords": [
+    "tiktok",
+    "downloader",
+    "playwright",
+    "video"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "playwright": "^1.58.2"
+  }
+}

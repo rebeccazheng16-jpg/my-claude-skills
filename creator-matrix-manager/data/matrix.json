@@ -1,0 +1,302 @@
+{
+  "version": "1.0",
+  "updated_at": "2025-01-22T12:00:00Z",
+
+  "persons": [
+    {
+      "id": "lina",
+      "name": "Lina Lie (李丽娜)",
+      "type": "founder",
+      "style_ref": "lina-founder-style",
+      "bio": "Tulandut联合创始人、BIOAQUA创始人、印尼TikTok第一MCN Onelink创始人",
+      "accounts": ["lina-tiktok-id", "lina-instagram", "lina-xiaohongshu"]
+    },
+    {
+      "id": "kevin",
+      "name": "Kevin Gao (高冉)",
+      "type": "founder",
+      "style_ref": "kevin-founder-style",
+      "bio": "前字节跳动高管、Tulandut合伙人",
+      "accounts": ["kevin-tiktok-id", "kevin-wechat"]
+    },
+    {
+      "id": "mikey",
+      "name": "Mikey",
+      "type": "founder",
+      "style_ref": "mikey-founder-style",
+      "bio": "连续创业者、品牌操盘手、Tulandut合伙人",
+      "accounts": ["mikey-tiktok-id", "mikey-wechat"]
+    }
+  ],
+
+  "accounts": [
+    {
+      "id": "lina-tiktok-id",
+      "person_id": "lina",
+      "platform": "TikTok",
+      "handle": "@linalie91",
+      "region": "Indonesia",
+      "language": "id",
+      "personas": ["lina-fashion-expert", "lina-beauty-mentor", "lina-business-coach"]
+    },
+    {
+      "id": "lina-instagram",
+      "person_id": "lina",
+      "platform": "Instagram",
+      "handle": "@linalie91",
+      "region": "Indonesia",
+      "language": "id",
+      "personas": ["lina-lifestyle"]
+    },
+    {
+      "id": "lina-xiaohongshu",
+      "person_id": "lina",
+      "platform": "小红书",
+      "handle": "Lina李丽娜",
+      "region": "China",
+      "language": "zh",
+      "personas": ["lina-overseas-entrepreneur"]
+    },
+    {
+      "id": "kevin-tiktok-id",
+      "person_id": "kevin",
+      "platform": "TikTok",
+      "handle": "@kevingao_id",
+      "region": "Indonesia",
+      "language": "zh",
+      "personas": ["kevin-ai-expert", "kevin-ecommerce-strategist"]
+    },
+    {
+      "id": "kevin-wechat",
+      "person_id": "kevin",
+      "platform": "WeChat",
+      "handle": "kevingao",
+      "region": "China",
+      "language": "zh",
+      "personas": ["kevin-tech-leader"]
+    },
+    {
+      "id": "mikey-tiktok-id",
+      "person_id": "mikey",
+      "platform": "TikTok",
+      "handle": "@mikey_tulandut",
+      "region": "Indonesia",
+      "language": "zh",
+      "personas": ["mikey-brand-operator", "mikey-self-discipline"]
+    },
+    {
+      "id": "mikey-wechat",
+      "person_id": "mikey",
+      "platform": "WeChat",
+      "handle": "mikey",
+      "region": "China",
+      "language": "zh",
+      "personas": ["mikey-entrepreneur"]
+    }
+  ],
+
+  "personas": [
+    {
+      "id": "lina-fashion-expert",
+      "account_id": "lina-tiktok-id",
+      "name": "时尚面料专家",
+      "name_local": "Ahli Kain Fashion",
+      "description": "专注于高端面料知识分享，帮助女性选择适合的服装面料",
+      "knowledge_scope": ["面料/*", "服装/*", "穿搭/女装"],
+      "target_audience": "female-agent",
+      "content_style": {
+        "tone": "专业、亲和、有深度",
+        "topics": ["面料知识", "穿搭技巧", "服装品质鉴别"],
+        "hashtags": ["#fashiontips", "#fabricexpert", "#tulandut"]
+      }
+    },
+    {
+      "id": "lina-beauty-mentor",
+      "account_id": "lina-tiktok-id",
+      "name": "美妆创业导师",
+      "name_local": "Mentor Bisnis Kecantikan",
+      "description": "分享美妆行业创业经验，帮助女性代理商成长",
+      "knowledge_scope": ["美妆/*", "创业/女性创业", "销售/*"],
+      "target_audience": "female-agent",
+      "content_style": {
+        "tone": "鼓励、实战、接地气",
+        "topics": ["美妆创业", "代理商管理", "销售技巧"],
+        "hashtags": ["#beautybusiness", "#womenentrepreneur"]
+      }
+    },
+    {
+      "id": "lina-business-coach",
+      "account_id": "lina-tiktok-id",
+      "name": "女性创业教练",
+      "name_local": "Coach Bisnis Wanita",
+      "description": "赋能印尼女性创业者，分享品牌建设和团队管理经验",
+      "knowledge_scope": ["创业/*", "团队管理/*", "品牌/*"],
+      "target_audience": "small-brand-founder",
+      "content_style": {
+        "tone": "温暖、坚定、有力量",
+        "topics": ["女性创业", "品牌建设", "团队管理"],
+        "hashtags": ["#womeninbusiness", "#entrepreneur"]
+      }
+    },
+    {
+      "id": "lina-lifestyle",
+      "account_id": "lina-instagram",
+      "name": "生活方式分享者",
+      "name_local": "Lifestyle Influencer",
+      "description": "分享工作与生活平衡，展示成功女性的日常",
+      "knowledge_scope": ["生活/*", "健康/*"],
+      "target_audience": "all",
+      "content_style": {
+        "tone": "轻松、真实、有质感",
+        "topics": ["日常生活", "工作平衡", "自我成长"],
+        "hashtags": ["#lifestyle", "#worklifebalance"]
+      }
+    },
+    {
+      "id": "lina-overseas-entrepreneur",
+      "account_id": "lina-xiaohongshu",
+      "name": "海外创业者",
+      "description": "分享印尼创业经历，为国内创业者提供出海参考",
+      "knowledge_scope": ["出海/*", "创业/*", "印尼市场/*"],
+      "target_audience": "tech-entrepreneur",
+      "content_style": {
+        "tone": "专业、分享、有洞察",
+        "topics": ["印尼市场", "出海创业", "跨境电商"],
+        "hashtags": ["#出海创业", "#印尼", "#跨境电商"]
+      }
+    },
+    {
+      "id": "kevin-ai-expert",
+      "account_id": "kevin-tiktok-id",
+      "name": "AI应用专家",
+      "description": "分享AI工具使用技巧，帮助创业者提升效率",
+      "knowledge_scope": ["AI/*", "效率/*", "工具/*"],
+      "target_audience": "tech-entrepreneur",
+      "content_style": {
+        "tone": "理性、专业、实用",
+        "topics": ["AI应用", "效率提升", "工具推荐"],
+        "hashtags": ["#AI", "#productivity"]
+      }
+    },
+    {
+      "id": "kevin-ecommerce-strategist",
+      "account_id": "kevin-tiktok-id",
+      "name": "电商策略师",
+      "description": "分享TikTok Shop和电商运营策略",
+      "knowledge_scope": ["电商/*", "TikTok/*", "直播/*"],
+      "target_audience": "ecommerce-operator",
+      "content_style": {
+        "tone": "数据驱动、洞察分享、策略性",
+        "topics": ["TikTok Shop", "电商运营", "直播带货"],
+        "hashtags": ["#tiktokshop", "#ecommerce"]
+      }
+    },
+    {
+      "id": "kevin-tech-leader",
+      "account_id": "kevin-wechat",
+      "name": "科技领袖",
+      "description": "分享科技趋势和创业心得",
+      "knowledge_scope": ["科技/*", "创业/*", "管理/*"],
+      "target_audience": "tech-entrepreneur",
+      "content_style": {
+        "tone": "克制、深度、有格局",
+        "topics": ["科技趋势", "创业感悟", "领导力"],
+        "hashtags": []
+      }
+    },
+    {
+      "id": "mikey-brand-operator",
+      "account_id": "mikey-tiktok-id",
+      "name": "品牌操盘手",
+      "description": "分享品牌运营实战经验，从负债到翻盘的真实故事",
+      "knowledge_scope": ["品牌/*", "电商/*", "出海/*"],
+      "target_audience": "small-brand-founder",
+      "content_style": {
+        "tone": "真诚、务实、有深度",
+        "topics": ["品牌运营", "出海电商", "逆境翻盘"],
+        "hashtags": ["#品牌操盘", "#出海创业"]
+      }
+    },
+    {
+      "id": "mikey-self-discipline",
+      "account_id": "mikey-tiktok-id",
+      "name": "自律成长者",
+      "description": "分享自律生活方式和成长感悟",
+      "knowledge_scope": ["成长/*", "自律/*", "人生/*"],
+      "target_audience": "all",
+      "content_style": {
+        "tone": "正能量、真诚、激励",
+        "topics": ["自律打卡", "成长感悟", "人生哲学"],
+        "hashtags": ["#自律", "#成长"]
+      }
+    },
+    {
+      "id": "mikey-entrepreneur",
+      "account_id": "mikey-wechat",
+      "name": "连续创业者",
+      "description": "分享创业心得和商业案例复盘",
+      "knowledge_scope": ["创业/*", "商业/*", "案例/*"],
+      "target_audience": "all",
+      "content_style": {
+        "tone": "接地气、有故事、有反思",
+        "topics": ["创业故事", "案例复盘", "商业思考"],
+        "hashtags": []
+      }
+    }
+  ],
+
+  "target_audiences": {
+    "default": "all",
+    "available": [
+      {
+        "id": "koc",
+        "name": "KOC (Key Opinion Consumer)",
+        "name_id": "KOC",
+        "description": "小型内容创作者，粉丝1万-10万",
+        "pain_keywords": ["变现", "流量", "算法", "佣金", "转化"]
+      },
+      {
+        "id": "female-agent",
+        "name": "Female Agent / Reseller",
+        "name_id": "Agen Wanita / Reseller",
+        "description": "女性代理商，代理品牌产品进行分销",
+        "pain_keywords": ["库存", "利润", "招商", "团队管理", "品牌选择"]
+      },
+      {
+        "id": "small-brand-founder",
+        "name": "Small Brand Founder",
+        "name_id": "Founder Brand Kecil",
+        "description": "小品牌创业者，自有品牌",
+        "pain_keywords": ["品牌建设", "供应链", "资金", "定价", "差异化"]
+      },
+      {
+        "id": "top-kol",
+        "name": "Top KOL",
+        "name_id": "KOL Besar",
+        "description": "头部KOL，粉丝50万以上",
+        "pain_keywords": ["商务谈判", "内容创新", "团队", "个人品牌", "多平台"]
+      },
+      {
+        "id": "ecommerce-operator",
+        "name": "E-commerce Operator",
+        "name_id": "Operator E-commerce",
+        "description": "电商运营从业者",
+        "pain_keywords": ["ROI", "流量成本", "转化率", "团队效率", "平台规则"]
+      },
+      {
+        "id": "tech-entrepreneur",
+        "name": "Tech Entrepreneur",
+        "name_id": "Pengusaha Teknologi",
+        "description": "科技/互联网创业者",
+        "pain_keywords": ["AI应用", "效率提升", "成本控制", "团队搭建", "融资"]
+      },
+      {
+        "id": "all",
+        "name": "All Entrepreneurs",
+        "name_id": "Semua Wirausaha",
+        "description": "所有创业者群体",
+        "pain_keywords": ["变现", "平衡", "成长", "资金", "心理健康"]
+      }
+    ]
+  }
+}

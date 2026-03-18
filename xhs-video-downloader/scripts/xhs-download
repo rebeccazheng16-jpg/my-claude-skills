@@ -1,0 +1,71 @@
+#!/bin/bash
+# 小红书视频下载快捷命令
+# 安装: ln -sf ~/.claude/skills/xhs-video-downloader/scripts/xhs-download ~/bin/xhs-download
+
+# 解析符号链接获取真实路径
+REAL_PATH="${BASH_SOURCE[0]}"
+while [ -L "$REAL_PATH" ]; do
+    DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
+    REAL_PATH="$(readlink "$REAL_PATH")"
+    # 处理相对路径的符号链接
+    [[ "$REAL_PATH" != /* ]] && REAL_PATH="$DIR/$REAL_PATH"
+done
+SCRIPT_DIR="$(cd "$(dirname "$REAL_PATH")" && pwd)"
+SKILL_DIR="$(dirname "$SCRIPT_DIR")"
+VENV_DIR="$SKILL_DIR/.venv"
+MEDIA_CRAWLER_VENV="/Users/kevingao/AI/Github/BettaFish/MindSpider/DeepSentimentCrawling/MediaCrawler/.venv"
+
+# 颜色
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+NC='\033[0m' # No Color
+
+# 检查参数
+if [ $# -lt 1 ]; then
+    echo -e "${YELLOW}用法:${NC} xhs-download <账号链接或ID>"
+    echo ""
+    echo "示例:"
+    echo "  xhs-download 5675e19782ec397e4a6835d3"
+    echo "  xhs-download 'https://www.xiaohongshu.com/user/profile/xxx'"
+    echo "  xhs-download 'https://xhslink.com/xxx'"
+    exit 1
+fi
+
+# 选择 Python 环境
+PYTHON=""
+
+# 优先使用 skill 自己的 venv
+if [ -f "$VENV_DIR/bin/python" ]; then
+    PYTHON="$VENV_DIR/bin/python"
+# 其次使用 MediaCrawler 的 venv
+elif [ -f "$MEDIA_CRAWLER_VENV/bin/python" ]; then
+    PYTHON="$MEDIA_CRAWLER_VENV/bin/python"
+# 最后尝试系统 Python
+else
+    if command -v python3 &> /dev/null; then
+        PYTHON="python3"
+    else
+        echo -e "${RED}错误: 未找到 Python${NC}"
+        echo "请运行: $SCRIPT_DIR/setup.sh"
+        exit 1
+    fi
+fi
+
+# 检查 Playwright
+$PYTHON -c "from playwright.async_api import async_playwright" 2>/dev/null
+if [ $? -ne 0 ]; then
+    echo -e "${YELLOW}首次运行，正在设置环境...${NC}"
+    bash "$SCRIPT_DIR/setup.sh"
+    if [ $? -ne 0 ]; then
+        echo -e "${RED}环境设置失败${NC}"
+        exit 1
+    fi
+    # 重新选择 Python
+    if [ -f "$VENV_DIR/bin/python" ]; then
+        PYTHON="$VENV_DIR/bin/python"
+    fi
+fi
+
+# 运行脚本
+exec $PYTHON "$SCRIPT_DIR/auto_download.py" "$@"

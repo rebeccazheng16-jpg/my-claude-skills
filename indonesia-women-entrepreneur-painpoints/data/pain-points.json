@@ -1,0 +1,643 @@
+{
+  "version": "2.1.0",
+  "last_updated": "2025-01-20",
+  "research_period": "2024-07 to 2025-01",
+  "data_sources": ["TikTok", "YouTube", "Instagram", "Media Reports", "Industry Reports"],
+  "total_data_points": 720,
+
+  "categories": [
+    {
+      "id": "financial-access",
+      "name_zh": "资金获取",
+      "name_en": "Financial Access",
+      "aggregation": 95,
+      "sentiment": -0.85,
+      "sentiment_label": "强负面",
+      "keywords": ["资金", "贷款", "投资", "融资", "抵押", "funding", "loan", "VC", "modal", "pinjaman"],
+      "pain_points": [
+        {
+          "id": "fa-01",
+          "title_zh": "风险投资极度不足",
+          "title_en": "Extremely limited VC funding",
+          "description": "女性创业者仅获得2.8%的风险投资",
+          "data_support": "Women receive only 2.8% of VC funding",
+          "emotional_trigger": "挫败、无助"
+        },
+        {
+          "id": "fa-02",
+          "title_zh": "全球融资缺口",
+          "title_en": "Global funding gap",
+          "description": "$1.7万亿美元缺口",
+          "emotional_trigger": "系统性不公"
+        },
+        {
+          "id": "fa-03",
+          "title_zh": "抵押品不足",
+          "title_en": "Collateral shortage",
+          "description": "资产多在丈夫名下，女性缺乏可用抵押品",
+          "emotional_trigger": "无奈、受限"
+        },
+        {
+          "id": "fa-04",
+          "title_zh": "财务记录不完善",
+          "title_en": "Poor financial records",
+          "description": "个人和业务财务混淆，缺乏规范记录",
+          "emotional_trigger": "困惑、不被认可"
+        },
+        {
+          "id": "fa-05",
+          "title_zh": "投资者偏见",
+          "title_en": "Investor bias",
+          "description": "女性被问风险问题而非增长问题",
+          "emotional_trigger": "不公平、委屈"
+        }
+      ],
+      "target_audiences": ["all", "small-brand-founder", "traditional-msme"]
+    },
+    {
+      "id": "mental-health",
+      "name_zh": "心理健康与倦怠",
+      "name_en": "Mental Health & Burnout",
+      "aggregation": 92,
+      "sentiment": -0.82,
+      "sentiment_label": "强负面",
+      "keywords": ["倦怠", "焦虑", "压力", "心理", "burnout", "stress", "anxiety", "mental", "capek", "lelah"],
+      "pain_points": [
+        {
+          "id": "mh-01",
+          "title_zh": "创作者倦怠",
+          "title_en": "Creator burnout",
+          "description": "78%表示倦怠影响创作动力",
+          "data_support": "78% say burnout affects motivation",
+          "emotional_trigger": "疲惫、绝望"
+        },
+        {
+          "id": "mh-02",
+          "title_zh": "持续发布压力",
+          "title_en": "Constant posting pressure",
+          "description": "75%感觉平台惩罚不连续发布",
+          "emotional_trigger": "焦虑、被迫"
+        },
+        {
+          "id": "mh-03",
+          "title_zh": "网络霸凌",
+          "title_en": "Cyberbullying",
+          "description": "49%经历过网络霸凌",
+          "emotional_trigger": "受伤、恐惧"
+        },
+        {
+          "id": "mh-04",
+          "title_zh": "年轻人心理健康危机",
+          "title_en": "Youth mental health crisis",
+          "description": "18-24岁42%因心理健康请假",
+          "emotional_trigger": "无助、孤独"
+        }
+      ],
+      "target_audiences": ["koc", "content-creator", "live-host"]
+    },
+    {
+      "id": "income-payment",
+      "name_zh": "收入与付款",
+      "name_en": "Income & Payment",
+      "aggregation": 90,
+      "sentiment": -0.80,
+      "sentiment_label": "强负面",
+      "keywords": ["付款", "佣金", "收入", "延迟", "payment", "commission", "income", "delay", "gaji", "komisi"],
+      "pain_points": [
+        {
+          "id": "ip-01",
+          "title_zh": "付款严重延迟",
+          "title_en": "Severe payment delays",
+          "description": "KOL付款延迟长达5个月",
+          "emotional_trigger": "愤怒、失望"
+        },
+        {
+          "id": "ip-02",
+          "title_zh": "佣金收窄",
+          "title_en": "Shrinking commissions",
+          "description": "工作量增加但收入减少",
+          "emotional_trigger": "不公、沮丧"
+        },
+        {
+          "id": "ip-03",
+          "title_zh": "以物易物泛滥",
+          "title_en": "Barter deal proliferation",
+          "description": "降低行业付费预期",
+          "emotional_trigger": "贬值感"
+        },
+        {
+          "id": "ip-04",
+          "title_zh": "平台佣金上涨",
+          "title_en": "Platform fee increases",
+          "description": "TikTok Shop佣金上调至8%，Shopee达9-13%",
+          "emotional_trigger": "被压榨"
+        },
+        {
+          "id": "ip-05",
+          "title_zh": "联盟佣金过低",
+          "title_en": "Low affiliate commissions",
+          "description": "Shopee最高仅2%或Rp10,000",
+          "emotional_trigger": "不值得"
+        }
+      ],
+      "target_audiences": ["koc", "content-creator", "live-host", "reseller"]
+    },
+    {
+      "id": "algorithm-platform",
+      "name_zh": "算法与平台规则",
+      "name_en": "Algorithm & Platform Rules",
+      "aggregation": 88,
+      "sentiment": -0.70,
+      "sentiment_label": "负面",
+      "keywords": ["算法", "规则", "shadowban", "流量", "algorithm", "rule", "traffic", "FYP", "aturan"],
+      "pain_points": [
+        {
+          "id": "ap-01",
+          "title_zh": "算法不可预测",
+          "title_en": "Algorithm unpredictability",
+          "description": "频繁更新导致流量波动焦虑",
+          "emotional_trigger": "无力、失控"
+        },
+        {
+          "id": "ap-02",
+          "title_zh": "Shadowban无预警",
+          "title_en": "Shadowban without warning",
+          "description": "流量骤降无解释，收入直接归零",
+          "emotional_trigger": "恐惧、愤怒"
+        },
+        {
+          "id": "ap-03",
+          "title_zh": "货币化规则变化",
+          "title_en": "Monetization rule changes",
+          "description": "不透明的货币化标准",
+          "emotional_trigger": "困惑、不安"
+        },
+        {
+          "id": "ap-04",
+          "title_zh": "平台强制整合",
+          "title_en": "Forced platform integration",
+          "description": "TikTok-Tokopedia强制整合，卖家被迫迁移",
+          "emotional_trigger": "被绑架、无选择"
+        }
+      ],
+      "target_audiences": ["koc", "content-creator", "live-host", "reseller"]
+    },
+    {
+      "id": "family-burden",
+      "name_zh": "家庭负担",
+      "name_en": "Family Burden",
+      "aggregation": 88,
+      "sentiment": -0.75,
+      "sentiment_label": "负面",
+      "keywords": ["家庭", "孩子", "父母", "平衡", "family", "children", "balance", "keluarga", "anak"],
+      "pain_points": [
+        {
+          "id": "fb-01",
+          "title_zh": "家务双重负担",
+          "title_en": "Domestic double burden",
+          "description": "家庭责任限制自我发展时间",
+          "emotional_trigger": "疲惫、内疚"
+        },
+        {
+          "id": "fb-02",
+          "title_zh": "三明治一代压力",
+          "title_en": "Sandwich generation pressure",
+          "description": "同时赡养父母和照顾孩子",
+          "emotional_trigger": "压力、焦虑"
+        },
+        {
+          "id": "fb-03",
+          "title_zh": "托儿服务缺乏",
+          "title_en": "Lack of childcare",
+          "description": "负担得起的托儿服务不足",
+          "emotional_trigger": "无奈、受限"
+        }
+      ],
+      "target_audiences": ["all", "traditional-msme", "female-agent"]
+    },
+    {
+      "id": "gender-bias",
+      "name_zh": "性别偏见",
+      "name_en": "Gender Bias",
+      "aggregation": 82,
+      "sentiment": -0.72,
+      "sentiment_label": "负面",
+      "keywords": ["偏见", "歧视", "性别", "bias", "discrimination", "gender", "perempuan"],
+      "pain_points": [
+        {
+          "id": "gb-01",
+          "title_zh": "自信心差距",
+          "title_en": "Confidence gap",
+          "description": "女性比男性少20%相信自己有技能",
+          "emotional_trigger": "自我怀疑"
+        },
+        {
+          "id": "gb-02",
+          "title_zh": "社会期望冲突",
+          "title_en": "Conflicting social expectations",
+          "description": "社会期望女性以家庭为主",
+          "emotional_trigger": "撕裂、委屈"
+        },
+        {
+          "id": "gb-03",
+          "title_zh": "社交网络排斥",
+          "title_en": "Networking exclusion",
+          "description": "男性主导的活动难以参与",
+          "emotional_trigger": "被排斥、孤立"
+        }
+      ],
+      "target_audiences": ["all", "small-brand-founder"]
+    },
+    {
+      "id": "digital-skills",
+      "name_zh": "数字技能",
+      "name_en": "Digital Skills",
+      "aggregation": 85,
+      "sentiment": -0.65,
+      "sentiment_label": "负面",
+      "keywords": ["数字", "技能", "培训", "digital", "skill", "training", "literasi"],
+      "pain_points": [
+        {
+          "id": "ds-01",
+          "title_zh": "数字素养不足",
+          "title_en": "Digital literacy gap",
+          "description": "37%的MSME只能简单操作电脑",
+          "emotional_trigger": "困惑、落后"
+        },
+        {
+          "id": "ds-02",
+          "title_zh": "培训资源不本地化",
+          "title_en": "Non-localized training",
+          "description": "培训内容不够用户友好",
+          "emotional_trigger": "挫折、放弃"
+        }
+      ],
+      "target_audiences": ["traditional-msme", "female-agent"]
+    },
+    {
+      "id": "mlm-specific",
+      "name_zh": "MLM代理特有痛点",
+      "name_en": "MLM Agent Specific",
+      "aggregation": 90,
+      "sentiment": -0.85,
+      "sentiment_label": "强负面",
+      "keywords": ["招募", "下线", "upline", "MLM", "传销", "人脉", "prospek", "downline"],
+      "pain_points": [
+        {
+          "id": "mlm-01",
+          "title_zh": "招不到下线/人脉耗尽",
+          "title_en": "Cannot recruit/network exhausted",
+          "description": "95%的MLM参与者因招不到人而失败",
+          "emotional_trigger": "绝望、孤立"
+        },
+        {
+          "id": "mlm-02",
+          "title_zh": "被亲友排斥/社交关系破裂",
+          "title_en": "Rejected by friends and family",
+          "description": "所有亲友被视为prospek，导致被躲避",
+          "emotional_trigger": "孤独、羞耻"
+        },
+        {
+          "id": "mlm-03",
+          "title_zh": "上线不负责/无指导",
+          "title_en": "Upline doesn't support",
+          "description": "上线只催购货不指导，像债务催收员",
+          "emotional_trigger": "愤怒、被利用"
+        },
+        {
+          "id": "mlm-04",
+          "title_zh": "囤货压力/库存卖不出",
+          "title_en": "Inventory pressure",
+          "description": "被要求购买高价产品包(Rp 1.5-60 juta)，卖不出去",
+          "emotional_trigger": "财务压力、后悔"
+        },
+        {
+          "id": "mlm-05",
+          "title_zh": "虚假收入承诺",
+          "title_en": "False income promises",
+          "description": "3个月回本、月入千万的承诺从不兑现",
+          "emotional_trigger": "被骗、愤怒"
+        }
+      ],
+      "target_audiences": ["mlm-agent"]
+    },
+    {
+      "id": "live-host-specific",
+      "name_zh": "带货主播特有痛点",
+      "name_en": "Live Host Specific",
+      "aggregation": 88,
+      "sentiment": -0.78,
+      "sentiment_label": "强负面",
+      "keywords": ["直播", "主播", "带货", "live", "host", "streaming", "siaran"],
+      "pain_points": [
+        {
+          "id": "lh-01",
+          "title_zh": "直播时长压力/Burnout",
+          "title_en": "Long streaming hours/Burnout",
+          "description": "日均6小时直播，只有开播才有收入",
+          "emotional_trigger": "疲惫、被迫"
+        },
+        {
+          "id": "lh-02",
+          "title_zh": "Agency剥削/高抽成",
+          "title_en": "Agency exploitation",
+          "description": "收入被抽20-50%，合同束缚",
+          "emotional_trigger": "被剥削、无奈"
+        },
+        {
+          "id": "lh-03",
+          "title_zh": "Seller随意降低佣金",
+          "title_en": "Seller cuts commission",
+          "description": "努力推广后佣金被下调，努力白费",
+          "emotional_trigger": "愤怒、不公"
+        },
+        {
+          "id": "lh-04",
+          "title_zh": "收入极度不稳定",
+          "title_en": "Extremely unstable income",
+          "description": "纯绩效模式，日薪Rp 33K-50K/小时起步",
+          "emotional_trigger": "焦虑、不安全"
+        }
+      ],
+      "target_audiences": ["live-host"]
+    },
+    {
+      "id": "reseller-specific",
+      "name_zh": "微商代理特有痛点",
+      "name_en": "Reseller Specific",
+      "aggregation": 85,
+      "sentiment": -0.72,
+      "sentiment_label": "负面",
+      "keywords": ["价格战", "佣金", "供应商", "reseller", "dropship", "supplier", "harga"],
+      "pain_points": [
+        {
+          "id": "rs-01",
+          "title_zh": "利润双重挤压",
+          "title_en": "Double profit squeeze",
+          "description": "平台佣金9-25% + 价格战导致利润趋零",
+          "emotional_trigger": "绝望、无出路"
+        },
+        {
+          "id": "rs-02",
+          "title_zh": "供应商不靠谱",
+          "title_en": "Unreliable suppliers",
+          "description": "品质不稳、发货延迟、甚至跑路",
+          "emotional_trigger": "焦虑、不信任"
+        },
+        {
+          "id": "rs-03",
+          "title_zh": "COD订单拒收",
+          "title_en": "COD order rejection",
+          "description": "买家拒收导致物流费自付",
+          "emotional_trigger": "损失、无奈"
+        },
+        {
+          "id": "rs-04",
+          "title_zh": "售后平台偏向买家",
+          "title_en": "Platform favors buyers",
+          "description": "退货邮费由卖家承担，无视频证据必输",
+          "emotional_trigger": "不公、愤怒"
+        }
+      ],
+      "target_audiences": ["reseller", "micro-ecommerce"]
+    },
+    {
+      "id": "rezeki-mindset",
+      "name_zh": "财富心态与能量",
+      "name_en": "Rezeki & Abundance Mindset",
+      "aggregation": 88,
+      "sentiment": -0.65,
+      "sentiment_label": "负面",
+      "keywords": ["rezeki", "energi", "frekuensi", "mindset", "panik", "uang", "duit", "cemas", "kelimpahan", "abundance"],
+      "pain_points": [
+        {
+          "id": "rm-01",
+          "title_zh": "越努力越穷循环",
+          "title_en": "Work harder but stay poor",
+          "description": "拼命努力但结果不变，钱只是'路过'",
+          "data_support": "爆款验证：50.7万观看 (2025-01-14)",
+          "emotional_trigger": "绝望、困惑"
+        },
+        {
+          "id": "rm-02",
+          "title_zh": "恐慌式追钱",
+          "title_en": "Panic-driven money chase",
+          "description": "钱不顺时恐慌、抱怨、怪罪环境，陷入焦虑循环",
+          "emotional_trigger": "焦虑、失控"
+        },
+        {
+          "id": "rm-03",
+          "title_zh": "信仰与怀疑冲突",
+          "title_en": "Faith vs doubt conflict",
+          "description": "不停祈祷(doa)但内心充满怀疑，宗教焦虑",
+          "emotional_trigger": "内疚、怀疑"
+        },
+        {
+          "id": "rm-04",
+          "title_zh": "能量/频率失衡",
+          "title_en": "Energy/frequency imbalance",
+          "description": "感觉自己'能量不对'、'频率不同步'，吸引不到好运",
+          "emotional_trigger": "迷茫、无力"
+        }
+      ],
+      "target_audiences": ["all", "female-agent", "koc", "small-brand-founder"],
+      "content_angle": "反常识：不追钱，先修复心态/能量；钱是结果不是目标",
+      "proven_hooks": [
+        "Kalau rezeki lagi gak ada, biasanya ngapain?",
+        "Orang susah sibuk ngejar duit; orang kaya sibuk benerin mindset",
+        "Duit nggak bakal dateng ke orang yang cemas"
+      ]
+    }
+  ],
+
+  "personas": [
+    {
+      "id": "micro-ecommerce",
+      "name_zh": "微型电商创业者",
+      "name_en": "Micro E-commerce Entrepreneur",
+      "age_range": "25-40",
+      "followers": "10K-50K",
+      "income": "Rp 5-15M/月",
+      "platforms": ["TikTok Shop", "Shopee"],
+      "top_pain_points": ["平台佣金过高", "COD订单拒收风险", "价格战压力"],
+      "unmet_needs": ["更低的平台费率", "更可靠的物流", "更好的买家信用系统"]
+    },
+    {
+      "id": "content-creator",
+      "name_zh": "内容创作者/KOC",
+      "name_en": "Content Creator/KOC",
+      "age_range": "20-35",
+      "followers": "10K-100K",
+      "income": "Rp 3-20M/月(波动)",
+      "platforms": ["TikTok", "Instagram", "YouTube"],
+      "top_pain_points": ["创作倦怠和心理健康", "算法变化导致流量波动", "品牌合作付款延迟"],
+      "unmet_needs": ["更稳定的收入来源", "算法透明度", "心理健康支持"]
+    },
+    {
+      "id": "mid-tier-kol",
+      "name_zh": "中型KOL/网红",
+      "name_en": "Mid-tier KOL/Influencer",
+      "age_range": "25-40",
+      "followers": "100K-500K",
+      "income": "Rp 20-50M/月",
+      "platforms": ["Instagram", "YouTube", "TikTok"],
+      "top_pain_points": ["品牌预算削减和议价能力下降", "以物易物交易增加", "互动率下降"],
+      "unmet_needs": ["公平的市场定价", "长期品牌合作", "专业代理支持"]
+    },
+    {
+      "id": "traditional-msme",
+      "name_zh": "传统MSME女性经营者",
+      "name_en": "Traditional MSME Female Owner",
+      "age_range": "35-55",
+      "followers": "<10K或无",
+      "income": "Rp 3-15M/月",
+      "platforms": ["线下+线上"],
+      "top_pain_points": ["数字技能不足", "获取资金困难", "清真/BPOM认证复杂"],
+      "unmet_needs": ["简化的数字培训", "无抵押贷款渠道", "简化的监管流程"]
+    },
+    {
+      "id": "mlm-agent",
+      "name_zh": "MLM代理",
+      "name_en": "MLM Agent",
+      "age_range": "25-45",
+      "followers": "N/A",
+      "income": "大部分亏损",
+      "platforms": ["WhatsApp", "线下"],
+      "top_pain_points": ["招不到下线", "社交关系破裂", "囤货压力"],
+      "unmet_needs": ["不依赖招募的收入", "保护社交关系", "真实的支持体系"]
+    },
+    {
+      "id": "live-host",
+      "name_zh": "带货主播",
+      "name_en": "Live Streaming Host",
+      "age_range": "20-35",
+      "followers": "10K-500K",
+      "income": "Rp 2-50M/月(波动大)",
+      "platforms": ["TikTok Shop", "Shopee Live"],
+      "top_pain_points": ["直播时长压力", "收入不稳定", "Agency剥削"],
+      "unmet_needs": ["透明的收入规则", "合理工作强度", "公平分成机制"]
+    }
+  ],
+
+  "audience_mapping": {
+    "all": "所有印尼女性创业者",
+    "koc": "KOC/关键意见消费者",
+    "content-creator": "内容创作者",
+    "live-host": "带货主播",
+    "reseller": "电商代理/Reseller",
+    "micro-ecommerce": "微型电商创业者",
+    "mlm-agent": "MLM/直销代理",
+    "female-agent": "女性代理商",
+    "small-brand-founder": "小品牌创业者",
+    "traditional-msme": "传统中小企业女性经营者"
+  },
+
+  "key_stats": {
+    "vc_funding_gap": "女性仅获得2.8%的VC投资",
+    "burnout_rate": "78%创作者表示倦怠影响动力",
+    "payment_delay": "KOL付款延迟长达5个月",
+    "algorithm_anxiety": "75%感觉平台惩罚不连续发布",
+    "mlm_failure_rate": "95%的MLM参与者失败",
+    "cyberbullying": "49%经历过网络霸凌",
+    "platform_fee": "平台佣金达9-25%",
+    "reseller_ratio": "85%的数字商家是reseller"
+  },
+
+  "emotional_keywords": {
+    "negative_high_freq": {
+      "indonesian": ["susah", "capek", "frustasi", "tidak adil", "terlambat", "ribet", "bingung", "takut"],
+      "english": ["difficult", "exhausted", "frustrated", "unfair", "delayed", "complicated", "confused", "scared", "overwhelmed", "burnout"],
+      "chinese": ["困难", "累", "沮丧", "不公平", "延迟", "麻烦", "困惑", "害怕"]
+    },
+    "unmet_expectations": {
+      "indonesian": ["berharap", "ingin", "butuh"],
+      "themes": ["公平佣金", "准时付款", "算法透明", "更多支持"]
+    }
+  },
+
+  "koc_pain_point_framework": {
+    "description": "KOC痛点四层分离框架 - 避免痛点混用、对策错配",
+    "core_insight": "KOC的痛点并非单一问题，而是4类性质完全不同的问题，被长期混在一起处理，直接导致效率低下与系统失效",
+    "levels": [
+      {
+        "id": "capability",
+        "name_zh": "能力型痛点",
+        "name_en": "Capability Gaps",
+        "essence": "不会，而不是不想",
+        "controllability": 5,
+        "symptoms": [
+          "不知道发什么内容",
+          "不会拍视频、不敢出镜",
+          "卖点讲不清楚",
+          "不会私信聊天转化",
+          "不会做复购与老客维护"
+        ],
+        "key_judgment": "该类问题无法通过激励或洗脑解决，属于高度可标准化、可自动化的问题",
+        "solutions": ["AI内容生成（选题/脚本/话术）", "SOP模板化", "示例与复用库"]
+      },
+      {
+        "id": "cognitive",
+        "name_zh": "认知型痛点",
+        "name_en": "Cognitive Friction",
+        "essence": "不确定，而不是不努力",
+        "controllability": 3,
+        "symptoms": [
+          "我适不适合做这个？",
+          "这样发会不会被讨厌？",
+          "我是不是在卖货、在割朋友？",
+          "别人怎么看我？"
+        ],
+        "key_judgment": "这是心理安全感与叙事缺失问题，不属于技能或执行层面",
+        "solutions": ["价值叙事与身份叙事", "榜样案例与路径示范", "角色合法性设计（为什么你可以做这件事）"]
+      },
+      {
+        "id": "structural",
+        "name_zh": "结构型痛点",
+        "name_en": "Structural Friction",
+        "essence": "系统设计不友好",
+        "controllability": 4,
+        "symptoms": [
+          "佣金规则复杂、算不清",
+          "升级路径不透明",
+          "权益与责任不对等",
+          "风险谁承担不清楚",
+          "囤货/压货焦虑"
+        ],
+        "key_judgment": "这是平台/品牌方的系统责任，与KOC个人能力无关",
+        "solutions": ["规则简化", "风险重分配（失败成本前移或共担）", "路径透明化（升级、退出、收益）"]
+      },
+      {
+        "id": "outcome",
+        "name_zh": "结果型痛点",
+        "name_en": "Outcome Anxiety",
+        "essence": "害怕努力了也没结果",
+        "controllability": 2,
+        "symptoms": [
+          "我发了也没人买",
+          "是不是只有少数人能赚到钱",
+          "我是不是不适合",
+          "继续做有没有意义"
+        ],
+        "key_judgment": "这是KOC最深层、最真实的恐惧，不解决这一层，留存一定失败",
+        "solutions": ["低门槛正反馈设计", "小胜路径（快速看到成果）", "可预期的回报模型"]
+      }
+    ],
+    "pain_point_mapping": {
+      "不知道发什么": "capability",
+      "拍视频没信心": "cognitive",
+      "没人下单": "outcome",
+      "佣金不清楚": "structural",
+      "怕被朋友讨厌": "cognitive",
+      "客户问完不买": "capability + outcome",
+      "不敢囤货": "structural",
+      "做了一阵没赚到": "outcome"
+    },
+    "strategic_priority": [
+      "1. 先解决能力型痛点（AI必须最先介入）",
+      "2. 同时设计低结果焦虑的正反馈机制",
+      "3. 再优化结构型问题（钱、规则、风险）",
+      "4. 最后放大认知型内容（心态、价值观）"
+    ],
+    "key_insight": "认知型内容是放大器，而不是启动器"
+  }
+}

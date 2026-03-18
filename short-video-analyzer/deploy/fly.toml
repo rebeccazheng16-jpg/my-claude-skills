@@ -1,0 +1,43 @@
+# Fly.io 配置文件
+# 文档: https://fly.io/docs/reference/configuration/
+
+app = "short-video-analyzer"
+primary_region = "sin"  # 新加坡，离亚洲近
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "3000"
+  PLAYWRIGHT_HEADLESS = "true"
+  TEMP_DIR = "/tmp/video-analyzer"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = false  # 保持常驻，不自动停止
+  auto_start_machines = true
+  min_machines_running = 1    # 至少保持 1 个实例运行
+  processes = ["app"]
+
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
+[[vm]]
+  memory = "1gb"      # 1GB 内存（Playwright 需要）
+  cpu_kind = "shared"
+  cpus = 1
+
+# 健康检查
+[checks]
+  [checks.health]
+    grace_period = "30s"
+    interval = "15s"
+    method = "GET"
+    path = "/health"
+    port = 3000
+    timeout = "10s"
+    type = "http"

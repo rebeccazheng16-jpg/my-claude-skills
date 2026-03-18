@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  video-analyzer:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - TEMP_DIR=/tmp/video-analyzer
+      # 飞书配置 (从 .env 文件读取)
+      - FEISHU_APP_ID=${FEISHU_APP_ID}
+      - FEISHU_APP_SECRET=${FEISHU_APP_SECRET}
+      - FEISHU_ENCRYPT_KEY=${FEISHU_ENCRYPT_KEY}
+      - FEISHU_VERIFICATION_TOKEN=${FEISHU_VERIFICATION_TOKEN}
+      - FEISHU_GROUP_CHAT_ID=${FEISHU_GROUP_CHAT_ID}
+      - FEISHU_BITABLE_APP_TOKEN=${FEISHU_BITABLE_APP_TOKEN}
+      - FEISHU_BITABLE_TABLE_ID=${FEISHU_BITABLE_TABLE_ID}
+      # Gemini
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - ./tmp:/tmp/video-analyzer
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
