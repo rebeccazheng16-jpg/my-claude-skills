@@ -13,8 +13,9 @@
 | 定位 | 印尼华裔穆斯林，20-25岁，luxury lifestyle 博主 |
 | Soul | 心静如水纯净善良的有钱女人。看到你挖了一大勺鱼子酱送进嘴里并浮现痛苦的表情，她只会笑笑并说"这东西真的好咸" |
 | 语言 | 印尼语口播 |
-| 三视图（唯一人脸锚点） | `~/Desktop/model/三视图/Kirana_chanel_turnaround_v2.jpg` |
-| 素材库 | `~/Desktop/model/Kirana/` |
+| 三视图（唯一人脸锚点） | `~/Desktop/模特公式图/Kirana/Kirana_chanel_turnaround_v2.jpg` |
+| 公式图库 | `~/Desktop/模特公式图/Kirana/` |
+| 脚本素材 | `~/Desktop/脚本视频生成/` |
 
 > ⚠️ **三视图路径是唯一真相来源**。如果三视图文件更新，本文件也要同步更新。
 
@@ -68,10 +69,10 @@ dark skin, yellow skin, warm color cast, foggy, hazy, soft focus, washed out, bl
 
 ### Step 2：生成首尾帧（静图）
 调用 **nano-banana-image-gen** skill，关键规则：
-- 参考图：`-r ~/Desktop/model/三视图/Kirana_chanel_turnaround_v2.jpg`
+- 参考图：`-r ~/Desktop/模特公式图/Kirana/Kirana_chanel_turnaround_v2.jpg`
 - 模型：`gemini-3-pro-image-preview`，分辨率：4K，宽高比：9:16
 - 提示词只写场景/动作，不写人物外观
-- 输出路径：`~/Desktop/model/Kirana/[项目名]/[项目]_S[编号]_[first/last].jpg`
+- 输出路径：`~/Desktop/脚本视频生成/[脚本名]/[项目]_S[编号]_[first/last].jpg`
 
 **自审（硬标准，失败静默重跑最多2次）：**
 - [ ] 头巾颜色与三视图一致
@@ -148,8 +149,8 @@ python3 -c "import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())"
 
 | 项目 | 路径 | 脚本 | 状态 |
 |------|------|------|------|
-| 02_韩国PDRN | `~/Desktop/model/Kirana/02_韩国PDRN/` | 投流脚本02 | 进行中 |
-| T3_闺蜜安利型 | `~/Desktop/model/Kirana/T3/` | T3_闺蜜安利型 | 已完成 |
+| 02_韩国PDRN | `~/Desktop/脚本视频生成/02_韩国PDRN/02_韩国PDRN/` | 投流脚本02 | 进行中 |
+| T3_闺蜜安利型 | `~/Desktop/脚本视频生成/T3_闺蜜安利型/` | T3_闺蜜安利型 | 已完成 |
 
 ---
 

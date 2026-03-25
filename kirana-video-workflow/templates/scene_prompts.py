@@ -56,11 +56,11 @@ NEGATIVE_PROMPT = (
 # ─────────────────────────────────────────────────────────────────────────────
 
 CHARACTERS = {
-    "Kirana": os.path.expanduser("~/Desktop/model/三视图/Kirana_chanel_turnaround_v2.jpg"),
-    "Yuki":   os.path.expanduser("~/Desktop/model/三视图/Yuki_turnaround.jpg"),
-    "Yuna":   os.path.expanduser("~/Desktop/model/三视图/Yuna_turnaround.jpg"),
-    "Hoa":    os.path.expanduser("~/Desktop/model/三视图/Hoa_turnaround.jpg"),
-    "Lily":   os.path.expanduser("~/Desktop/model/三视图/Lily_turnaround.jpg"),
+    "Kirana": os.path.expanduser("~/Desktop/模特公式图/Kirana/Kirana_chanel_turnaround_v2.jpg"),
+    "Yuki":   os.path.expanduser("~/Desktop/模特公式图/Yuki/Yuki_turnaround.jpg"),
+    "Yuna":   os.path.expanduser("~/Desktop/模特公式图/Yuna/Yuna_turnaround.jpg"),
+    "Hoa":    os.path.expanduser("~/Desktop/模特公式图/Hoa/Hoa_turnaround.jpg"),
+    "Lily":   os.path.expanduser("~/Desktop/模特公式图/Lily/Lily_turnaround.jpg"),
 }
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -68,7 +68,8 @@ CHARACTERS = {
 # 每个 scene：action（硬编码）+ default_dialogue（可被覆盖）+ 帧路径 + 参数
 # ─────────────────────────────────────────────────────────────────────────────
 
-_K = os.path.expanduser("~/Desktop/model/Kirana")
+_02 = os.path.expanduser("~/Desktop/脚本视频生成/02_韩国PDRN/02_韩国PDRN")
+_T3 = os.path.expanduser("~/Desktop/脚本视频生成/T3_闺蜜安利型")
 
 SCENE_TEMPLATES = {
 
@@ -86,8 +87,8 @@ SCENE_TEMPLATES = {
             "Antriannya tiga bulan, sekali suntik jutaan. "
             "Tapi sekarang nggak perlu ke Korea."
         ),
-        "first_frame": f"{_K}/02_韩国PDRN/02_S1_first.jpg",
-        "last_frame":  f"{_K}/02_韩国PDRN/02_S1_last.jpg",
+        "first_frame": f"{_02}/02_S1_first.jpg",
+        "last_frame":  f"{_02}/02_S1_last.jpg",
         "duration": 8, "resolution": "720p",
     },
 
@@ -102,8 +103,8 @@ SCENE_TEMPLATES = {
             "persis sumbernya sama dengan klinik Korea. "
             "Plus 500D micro-collagen dan 8D hyaluronic acid. Satu tube ada semua."
         ),
-        "first_frame": f"{_K}/02_韩国PDRN/02_S2_first.jpg",
-        "last_frame":  f"{_K}/02_韩国PDRN/02_S2_last.jpg",
+        "first_frame": f"{_02}/02_S2_first.jpg",
+        "last_frame":  f"{_02}/02_S2_last.jpg",
         "duration": 8, "resolution": "720p",
     },
 
@@ -117,8 +118,8 @@ SCENE_TEMPLATES = {
             "Empat belas hari warna kuning berkurang tiga puluh satu persen — "
             "ini bukan klaim iklan, ini hasil uji klinis manusia pihak ketiga."
         ),
-        "first_frame": f"{_K}/02_韩国PDRN/02_S3_first.jpg",
-        "last_frame":  f"{_K}/02_韩国PDRN/02_S3_last.jpg",
+        "first_frame": f"{_02}/02_S3_first.jpg",
+        "last_frame":  f"{_02}/02_S3_last.jpg",
         "duration": 8, "resolution": "720p",
     },
 
@@ -133,8 +134,8 @@ SCENE_TEMPLATES = {
             "Made in Korea, BPOM certified. "
             "Komen 'PDRN' aku kirim info produknya."
         ),
-        "first_frame": f"{_K}/02_韩国PDRN/02_S4_first.jpg",
-        "last_frame":  f"{_K}/02_韩国PDRN/02_S4_last.jpg",
+        "first_frame": f"{_02}/02_S4_first.jpg",
+        "last_frame":  f"{_02}/02_S4_last.jpg",
         "duration": 8, "resolution": "720p",
     },
 
@@ -151,8 +152,8 @@ SCENE_TEMPLATES = {
             "Guys, udah 5 orang tanya aku pakai apa buat kulit aku."
         ),
         "props": [os.path.expanduser("~/Desktop/model/props_iPhone17Pro_orange.png")],
-        "first_frame": f"{_K}/T3_S1_first_v3.png",
-        "last_frame":  f"{_K}/T3_S1_last_v8.png",
+        "first_frame": f"{_T3}/T3_S1_first_v3.png",
+        "last_frame":  f"{_T3}/T3_S1_last_v8.png",
         "duration": 6, "resolution": "720p",
     },
 
@@ -165,8 +166,8 @@ SCENE_TEMPLATES = {
         "default_dialogue": (
             "Sebenernya nggak mau bilang, tapi karena udah banyak yang tanya..."
         ),
-        "first_frame": f"{_K}/T3_S2_first.png",
-        "last_frame":  f"{_K}/T3_S2_last.png",
+        "first_frame": f"{_T3}/T3_S2_first.png",
+        "last_frame":  f"{_T3}/T3_S2_last.png",
         "duration": 6, "resolution": "720p",
     },
 
@@ -180,8 +181,8 @@ SCENE_TEMPLATES = {
         "default_dialogue": (
             "Ini dia rahasianya — masker dari Veirfoo."
         ),
-        "first_frame": f"{_K}/T3_S3_first_v5.png",
-        "last_frame":  f"{_K}/T3_S3_last_v5.png",
+        "first_frame": f"{_T3}/T3_S3_first_v5.png",
+        "last_frame":  f"{_T3}/T3_S3_last_v5.png",
         "duration": 8, "resolution": "1080p",
     },
 
@@ -194,8 +195,8 @@ SCENE_TEMPLATES = {
         "default_dialogue": (
             "Aku pakai ini tiap malam, lima belas menit sebelum tidur."
         ),
-        "first_frame": f"{_K}/T3_S4_first_v4.png",
-        "last_frame":  f"{_K}/T3_S4_last_v5.png",
+        "first_frame": f"{_T3}/T3_S4_first_v4.png",
+        "last_frame":  f"{_T3}/T3_S4_last_v5.png",
         "duration": 8, "resolution": "1080p",
     },
 
@@ -209,8 +210,8 @@ SCENE_TEMPLATES = {
             "Dan rasanya kayak jelly dingin gitu di muka. Nggak lengket, nggak berat."
         ),
         "props": [os.path.expanduser("~/Desktop/model/props_iPhone17Pro_orange.png")],
-        "first_frame": f"{_K}/T3_S5_first_v5.png",
-        "last_frame":  f"{_K}/T3_S5_last_v4.png",
+        "first_frame": f"{_T3}/T3_S5_first_v5.png",
+        "last_frame":  f"{_T3}/T3_S5_last_v4.png",
         "duration": 8, "resolution": "1080p",
     },
 
@@ -223,8 +224,8 @@ SCENE_TEMPLATES = {
         "default_dialogue": (
             "Besok paginya, muka aku berasa jauh lebih kenyal dan cerah."
         ),
-        "first_frame": f"{_K}/T3_S6_first.png",
-        "last_frame":  f"{_K}/T3_S6_last_v4.png",
+        "first_frame": f"{_T3}/T3_S6_first.png",
+        "last_frame":  f"{_T3}/T3_S6_last_v4.png",
         "duration": 6, "resolution": "720p",
     },
 
@@ -238,8 +239,8 @@ SCENE_TEMPLATES = {
         "default_dialogue": (
             "Serius deh, ini beneran ngebantu kulit aku. Bukan lebay."
         ),
-        "first_frame": f"{_K}/T3_S7_first_v4.png",
-        "last_frame":  f"{_K}/T3_S7_last_v4.png",
+        "first_frame": f"{_T3}/T3_S7_first_v4.png",
+        "last_frame":  f"{_T3}/T3_S7_last_v4.png",
         "duration": 8, "resolution": "1080p",
     },
 
@@ -252,8 +253,8 @@ SCENE_TEMPLATES = {
         "default_dialogue": (
             "Ada DNA salmon, kolagen, aman, dan nggak mahal."
         ),
-        "first_frame": f"{_K}/T3_S8_first_v4.png",
-        "last_frame":  f"{_K}/T3_S8_last_v5.png",
+        "first_frame": f"{_T3}/T3_S8_first_v4.png",
+        "last_frame":  f"{_T3}/T3_S8_last_v5.png",
         "duration": 6, "resolution": "720p",
     },
 
@@ -266,8 +267,8 @@ SCENE_TEMPLATES = {
         "default_dialogue": (
             "Kalau mau tau lebih, link di bio ya!"
         ),
-        "first_frame": f"{_K}/T3_S9_first_v4.png",
-        "last_frame":  f"{_K}/T3_S9_last_v4.png",
+        "first_frame": f"{_T3}/T3_S9_first_v4.png",
+        "last_frame":  f"{_T3}/T3_S9_last_v4.png",
         "duration": 6, "resolution": "720p",
     },
 }
@@ -327,13 +328,13 @@ def build_veo_cmd(
 #   python3 ~/.claude/skills/nano-banana-image-gen/scripts/gemini_image_gen.py \
 #     "[场景描述，不写外观]" \
 #     -r CHARACTERS["Yuki"] \
-#     -a "9:16" -s "4K" -n "T3_S1_Yuki_first" -o "~/Desktop/model/Yuki/"
+#     -a "9:16" -s "4K" -n "T3_S1_Yuki_first" -o "~/Desktop/脚本视频生成/T3_闺蜜安利型/"
 #
 # Step 2：用新帧路径调 build_veo_cmd，提示词原文不改
 #   cmd = build_veo_cmd(
 #       "T3_S1",
-#       first_frame="~/Desktop/model/Yuki/T3_S1_Yuki_first.jpg",
-#       last_frame="~/Desktop/model/Yuki/T3_S1_Yuki_last.jpg",
+#       first_frame="~/Desktop/脚本视频生成/T3_闺蜜安利型/T3_S1_Yuki_first.jpg",
+#       last_frame="~/Desktop/脚本视频生成/T3_闺蜜安利型/T3_S1_Yuki_last.jpg",
 #       output_name="T3_S1_Yuki_v1",
 #   )
 #

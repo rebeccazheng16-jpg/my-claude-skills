@@ -7,7 +7,7 @@
 - **Soul**：看到你挖了一大勺鱼子酱直接送进嘴里并浮现痛苦的表情，她只会笑笑并说一句这东西真的好咸
 - **定位**：印尼华裔穆斯林，luxury lifestyle 博主，心静如水，不表演
 - **语言**：印尼语口播
-- **三视图**：`~/Desktop/model/三视图/Kirana_homewear_turnaround_v5.jpg`（唯一人脸锚点）
+- **三视图**：`~/Desktop/模特公式图/Kirana/Kirana_homewear_turnaround_v5.jpg`（唯一人脸锚点）
 
 ---
 
@@ -63,7 +63,7 @@ no extra limbs, no extra fingers, no deformed hands, no floating limbs.
 ### 生成参数
 
 ```bash
--r "~/Desktop/model/三视图/Kirana_homewear_turnaround_v5.jpg"
+-r "~/Desktop/模特公式图/Kirana/Kirana_homewear_turnaround_v5.jpg"
 -a "9:16" -s "4K" -m "gemini-3-pro-image-preview"
 ```
 
