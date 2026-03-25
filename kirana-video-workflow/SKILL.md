@@ -96,30 +96,23 @@ python3 ~/.claude/skills/veo-video-gen/scripts/veo_video_gen.py \
   -n "[文件名]" -o "[输出目录]"
 ```
 
-**Veo 提示词结构：**
+**完整可用模板（直接换台词即可，已验证）：**
+
+正向 prompt：
 ```
-[场景/光影] + [人物动作] + [口播指令 + 印尼语台词] + [气质约束] + [防畸形]
+Woman on cream ivory sofa by a window with sheer white curtains on the left side, soft natural side light, bright airy cream interior, soft bokeh background. She [动作描述], speaks naturally and conversationally as if telling a close friend: '[印尼语台词]'. Calm serene wealthy young woman, subtle refined expressions, gentle composed demeanor. Minimal natural gestures, subtle expressions, NOT exaggerated. Fixed camera, no movement. Half-body portrait, 9:16 vertical. Anatomically correct, exactly two hands, no extra limbs, no extra fingers, no deformed hands, no floating limbs.
 ```
 
-**固定场景描述（室内沙发，已验证）：**
+Negative prompt（固定，不可删减）：
 ```
-Woman on cream ivory sofa by a window with sheer white curtains on the left side,
-soft natural side light, bright airy cream interior, soft bokeh background.
-```
-
-**固定气质约束：**
-```
-Minimal natural gestures, subtle expressions, NOT exaggerated. Fixed camera, no movement.
+voiceover, narration, documentary style, announcement voice, off-screen narrator, statistics reading, exaggerated expressions, dramatic gestures, theatrical performance, text overlay, subtitle, caption, camera zoom, camera push, background music, dark skin, yellow skin, warm color cast, foggy, hazy, soft focus, washed out, blurry
 ```
 
-**固定防畸形词：**
-```
-Half-body portrait, 9:16 vertical. Anatomically correct, exactly two hands,
-no extra limbs, no extra fingers, no deformed hands, no floating limbs.
-```
+> ⚠️ 数据类台词（含数字/百分比/权威背书）天然触发旁白，必须用 "speaks...as if telling a close friend" 包裹，且数字建议印尼语拼写（`tiga puluh satu persen` 而非 `31%`）
 
 **分辨率约束：**
-- 720p：支持 4/6/8s ← **默认用这个**
+- 720p + 文生视频：支持 4/6/8s
+- 720p + **首尾帧模式**：只支持 **6/8s**（4s 报 use case not supported）← **默认用 8s**
 - 1080p/4K：只支持 8s，4K 有概率生成黑屏
 
 ### Step 4：视频验证
